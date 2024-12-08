@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo da Velha</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Jogo da Velha</h1>
+        <p>Escolha seu modo de jogo e divirta-se!</p>
+    </header>
+    <main>
+        <section class="game-setup">
+            <button id="playerVsPlayer">2 Jogadores</button>
+            <button id="playerVsBot">Jogar contra o Robô</button>
+        </section>
+        <section class="game-board hidden">
+            <div id="board">
+                <div class="cell" data-index="0"></div>
+                <div class="cell" data-index="1"></div>
+                <div class="cell" data-index="2"></div>
+                <div class="cell" data-index="3"></div>
+                <div class="cell" data-index="4"></div>
+                <div class="cell" data-index="5"></div>
+                <div class="cell" data-index="6"></div>
+                <div class="cell" data-index="7"></div>
+                <div class="cell" data-index="8"></div>
+            </div>
+            <button id="restart" class="hidden">Reiniciar</button>
+            <p id="statusMessage"></p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Jogo da Velha - Susta</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
